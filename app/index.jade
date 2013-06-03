@@ -1,0 +1,118 @@
+doctype 5
+head
+	meta(charset="utf-8")
+	title= title
+	meta(name="viewport", content="width=device-width, initial-scale=1.0")
+	meta(name="description", content="")
+	meta(name="author", content="")
+    
+	link(href="stylesheets/app.css", rel="stylesheet")
+	link(rel="apple-touch-icon-precomposed", sizes="144x144", href="assets/ico/apple-touch-icon-144-precomposed.png")
+	link(rel="apple-touch-icon-precomposed", sizes="114x114", href="assets/ico/apple-touch-icon-114-precomposed.png")
+	link(rel="apple-touch-icon-precomposed", sizes="72x72", href="assets/ico/apple-touch-icon-72-precomposed.png")
+	link(rel="apple-touch-icon-precomposed", href="assets/ico/apple-touch-icon-57-precomposed.png")
+	link(rel="shortcut icon", href="assets/ico/favicon.png")
+
+	script.
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', #{analyticsAccount}]);
+		_gaq.push(['_trackPageview']);
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+body(data-spy="scroll", data-target=".bs-docs-sidebar")
+	div.navbar.navbar-inverse.navbar-fixed-top
+		div.navbar-inner
+			div.container
+				button.btn.btn-navbar(type="button", data-toggle="collapse", data-target=".nav-collapse")
+				span.icon-bar
+				span.icon-bar
+				span.icon-bar
+				div.nav-collapse.collapse
+					ul.nav
+						li.active
+							a(href="./index.html") Tuesday Knight Games
+						li
+							a(href="./getting-started.html") Two Rooms and a Boom
+						li
+							a(href="./scaffolding.html") Face Spankers
+						li
+							a(href="./base-css.html") Pit Bull Pugilists
+	div.jumbotron.masthead.dark-gradient
+		div.container.logo
+			img(src="images/2r1blogo_tall.png")
+		div.container.slider
+			div.slide
+				
+				div.row
+					div.span4
+						h2 Protect the President!
+						h3.highlight YOU HAVE 15 MINUTES TO FIND THE BOMBER
+						p In fifteen minutes, the bomb is going to go off, and kill everyone in it. Find out who the Bomber is and keep the President out of his room!
+						a.btn.btn-primary.btn-large(href="http://github.com/codevinsky/snacky-cakes") Pick A Side!
+					p.span4
+						img(src="images/cards.png")
+			ul.masthead-links
+				li
+					a(href="http://github.com/codevinsky/snacky-cakes") GitHub project
+				li
+					a(href="#examples") Examples
+				li Version 0.0.1
+
+	div.social
+		div.container
+			ul.social-buttons
+				li
+					iframe.github-btn(src="http://ghbtns.com/github-btn.html?user=twitter&repo=bootstrap&type=watch&count=true", allowtransparency="true", frameborder="0", scrolling="0", width="100px", height="20px")
+				li
+					iframe.github-btn(src="http://ghbtns.com/github-btn.html?user=twitter&repo=bootstrap&type=fork&count=true", allowtransparency="true", frameborder="0", scrolling="0", width="102px",height="20px")
+				li.follow-btn
+					a.twitter-follow-button(href="https://twitter.com/twbootstrap", data-link-color="#0069D6", data-show-count="true") Follow @twbootstrap
+				li.tweet-btn
+					a.twitter-share-button(href="https://twitter.com/share",  data-url="http://twitter.github.com/bootstrap/", data-count="horizontal", data-via="twbootstrap", data-related="mdo:Creator of Twitter Bootstrap") Tweet
+	
+	div.marketing.light-gradient
+		div.container
+			h1 Introducing Two Rooms and a Boom
+			div.row-fluid
+				div.span4
+					h2.highlight Easy To Learn
+					p Your first game of 2R1B will only take 6 minutes, and in no time you’ll lying, conniving, spying, and hustling to your heart’s content.
+				div.span4
+					h2.highlight Fast To Play
+					p Games are a great icebreaker, but people can be afraid to commit a large chunk of time to a game they’ve never played before. Fortunately, every game of 2R1B plays in fifteen minutes or less.
+				div.span4
+					h2.highlight Any Group: Big or Small
+					p Corporate event? Birthday party? Church group? Regular gaming night? Even if you’re throwing a party where the attendees don’t know each other, 2R1B plays with 6-30+ players, and gets people up and talking!
+	
+	div.marketing.testimonials.dark-gradient
+		div.container
+			h1 Don't Take Our Word For It.
+			div.row-fluid
+				div.span4
+					h2 Erin
+					h3.highlight "Werewolf Killer"
+					p This game is a Werewolf killer for me. It’s very fast-paced and can feel pretty random for it at times, but I love it. I love that it’s real time so you can’t overthink your decisions like you might be inclined to in other social deduction games and it plays so quickly you can play multiple games in a row!
+				div.span4
+					h2 Caitlin
+					h3.highlight "Addict"
+					p Looooove this game. I take it with me most places in the off chance that we will have enough people and two rooms.
+				div.span4
+					h2 Jeremy
+					h3.highlight "Woodland Creature"
+					p Not the best game ever. Just the best party game ever.
+
+	footer.footer
+		div.container.
+			<p>Designed and built with all the love in the world by <a href="http://twitter.com/mdo" target="_blank">@mdo</a> and <a href="http://twitter.com/fat" target="_blank">@fat</a>.</p>
+			<p>Code licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+			<p><a href="http://glyphicons.com">Glyphicons Free</a> licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+			<ul class="footer-links">
+				<li><a href="http://blog.getbootstrap.com">Blog</a></li>
+				<li class="muted">&middot;</li>
+				<li><a href="https://github.com/twitter/bootstrap/issues?state=open">Issues</a></li>
+				<li class="muted">&middot;</li>
+				<li><a href="https://github.com/twitter/bootstrap/blob/master/CHANGELOG.md">Changelog</a></li>
+			</ul>
