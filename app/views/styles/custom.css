@@ -304,9 +304,10 @@ hr.soften {
 }
 
 .marketing .features {
-  background-color:  #ff8e8e;
-  color: #333;
-  padding-top: 5px;
+  background-color:  #333;
+  color: #ddd;
+  margin-bottom: 10px;
+  padding: 10px;
   border: 1px solid #e3e3e3;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -330,10 +331,13 @@ hr.soften {
 .marketing .features ul {
   float: left;
   list-style: none;
-  list-style-image: 
+  list-style-image: url('/images/bomb.png');
   font-weight: bold;
   line-height: 3em;
+  margin-left:;
 }
+
+
 
 
 /* Introduction 
@@ -369,6 +373,18 @@ hr.soften {
 
 .testimonials img {
   border: 1px solid white;
+}
+
+/* Downloads
+-------------------------------------------------- */
+
+.downloads {
+
+}
+
+
+.downloads button {
+  width: 100%;
 }
 
 /* Footer

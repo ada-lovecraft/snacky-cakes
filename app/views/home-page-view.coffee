@@ -5,3 +5,5 @@ module.exports = class HomePageView extends View
   autoRender: yes
   className: 'home-page'
   template: template
+  init: ->
+  	console.log('farts')
